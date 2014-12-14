@@ -1,0 +1,33 @@
+the paths are all hard coded, so edit the files if you don't like where I put things..
+
+create the directory /tmp/404
+change the ownership to the web server
+I copied the dat file there as well, not sure if it's needed still, it was at one point.
+
+it expects things to be in /usr/local/apache/htdocs/zork
+
+It uses MySQL as a backend, so you must create a database with the following tables
+
+CREATE TABLE session
+( 
+  ID VARCHAR(8) NOT NULL,
+  LastAction DATETIME, 
+  LastLocatn TEXT,
+  UserID VARCHAR(8),
+  LastRead DATETIME,
+  PRIMARY KEY(ID)
+);
+
+CREATE TABLE users
+(
+  ID INT(8) NOT NULL AUTO_INCREMENT,
+  Name VARCHAR(32),
+  password VARCHAR(32),
+  email VARCHAR(32),
+
+  logins INT(1),
+  admin INT(1),
+
+  PRIMARY KEY(ID)
+);
+

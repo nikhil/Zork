@@ -1,0 +1,6 @@
+#!/bin/sh
+
+while [ `pidof $1` -ne 0 ]; do
+  sleep 1
+done
+rm $1
