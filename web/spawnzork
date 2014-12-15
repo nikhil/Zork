@@ -1,8 +1,8 @@
 #!/bin/sh
 
-ZORK="/opt/lampp/htdocs/zork/web/zork"
-TEMP="/opt/lampp/htdocs/zork/tmp/"
-WATCHER="/opt/lampp/htdocs/zork/web/spawnwatch"
+ZORK="/app/web/zork"
+TEMP="/tmp/"
+WATCHER="/app/web/spawnwatch"
 
 if [ $# -ne 0 ]
 then

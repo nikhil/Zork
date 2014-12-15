@@ -24,12 +24,12 @@ $start = $_POST["start"];
  $invalid =0;
 if($inputPrompt == "clear" or $inputPrompt == "clc")
 {	$invalid =1;
- if($fileopen = fopen("/opt/lampp/htdocs/zork/tmp/". $session . "_input", "w"))
+ if($fileopen = fopen("/tmp/". $session . "_input", "w"))
     {
        fclose($fileopen);
 
 	}
- if($fileopen = fopen("/opt/lampp/htdocs/zork/tmp/". $session . "_output", "w"))
+ if($fileopen = fopen("/tmp/". $session . "_output", "w"))
     {
        fclose($fileopen);
 
@@ -191,7 +191,7 @@ if($invalid !=1)
 	
   if($inputPrompt)
   {
-    if($fileopen = fopen("/opt/lampp/htdocs/zork/tmp/". $session . "_input", "a"))
+    if($fileopen = fopen("/tmp/". $session . "_input", "a"))
     {
       fwrite ($fileopen, $inputPrompt . "\n");
 	  fclose($fileopen);
@@ -199,7 +199,7 @@ if($invalid !=1)
   }
 
 
-system("/opt/lampp/htdocs/zork/web/spawnzork $session");
+system("/app/web/spawnzork $session");
 $stime = time();
 $filename = "/tmp/404/" . $session . "_zork";
 while(file_exists($filename))
@@ -207,7 +207,7 @@ while(file_exists($filename))
  
 }
 
-if($fileopen = fopen("/opt/lampp/htdocs/zork/tmp/" . $session . "_output", "r"))
+if($fileopen = fopen("/tmp/" . $session . "_output", "r"))
 {
   $outputText = "";
   while(!feof($fileopen))
@@ -222,7 +222,7 @@ There is a small mailbox here./", "", $outputText,1);
     
 }
 
-if($fileopen = fopen("/opt/lampp/htdocs/zork/tmp/" . $session . "_input", "r"))
+if($fileopen = fopen("/tmp/" . $session . "_input", "r"))
 {
   $inputText = "";
   while(!feof($fileopen))
