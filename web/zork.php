@@ -236,7 +236,8 @@ $outputText = str_replace("Welcome to Dungeon", "Welcome to Zork", $outputText);
 $outputText = preg_replace("/You are in an open field west of a big white house with a boarded
 front door.
 There is a small mailbox here./", "", $outputText,1);
-    
+$outputText = preg_replace("/Welcome to Zork.	This version created 11-MAR-91./", "", $outputText,1);
+  
 }
 
 if($fileopen = fopen("/tmp/" . $session . "_input", "r"))
