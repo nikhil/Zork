@@ -2,10 +2,11 @@
 error_reporting(0);
 $inputPrompt = $_POST["inputPrompt"];
 $start = $_POST["start"];
- header("Expires: Mon, 21 Sep 2000 07:30:00 GMT");
+/* header("Expires: Mon, 21 Sep 2000 07:30:00 GMT");
  header("Last-Modified: ".gmdate("D, d M Y H:i:s")." GMT");
  header("Cache-Control: no-cache, must-revalidate");
  header("Pragma: no-cache" );
+ */
  $session = $_SERVER['REMOTE_ADDR'];
 
 ?>
@@ -286,10 +287,10 @@ if($error)
   print("$error<br><br>");
 }
 
-print("<form name=\"prompt\" action=\"zork.php\" method=\"post\">");
+print("<br/><form name=\"prompt\" action=\"zork.php\" method=\"post\">");
 
 
-print("&gt;&nbsp;<input class=\"prompt\" type=\"text\" name=\"inputPrompt\" size=\"80\" autocomplete=\"off\">
+print("&gt;&nbsp;<input class=\"prompt\" type=\"text\" name=\"inputPrompt\" autocomplete=\"off\">
 </form>
 ");
 }
@@ -299,10 +300,10 @@ else
 
 	 print("<br>\n$in<br>\n<br>\n");
 
-print("<form name=\"prompt\" action=\"zork.php\" method=\"post\">");
+print("<br/><form name=\"prompt\" action=\"zork.php\" method=\"post\">");
 
 
-print("&gt;&nbsp;<input class=\"prompt\" type=\"text\" name=\"inputPrompt\" size=\"80\" autocomplete=\"off\">
+print("&gt;&nbsp;<input class=\"prompt\" type=\"text\" name=\"inputPrompt\" autocomplete=\"off\">
 </form>
 ");
 
