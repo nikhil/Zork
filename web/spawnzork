@@ -6,10 +6,8 @@ WATCHER="/app/web/spawnwatch"
 
 if [ $# -ne 0 ]
 then
-  # we have a session
-  # spawn zork
-  
+   
   ln -s $ZORK $TEMP$1_zork
-  $TEMP$1_zork < $TEMP$1_input > $TEMP$1_output& #2> /dev/null &
+  $TEMP$1_zork < $TEMP$1_input > $TEMP$1_output& 
   $WATCHER $TEMP$1_zork &
 fi
