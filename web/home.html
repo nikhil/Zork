@@ -1,22 +1,43 @@
-<HTML>
-<HEAD>
-<TITLE>... 404 Error: Now what??? ...</TITLE>
-<LINK REL=stylesheet HREF="style.css" TYPE="text/css">
-</HEAD>
+<html>
+<head>
+<title>Zork</title>
+<link rel=stylesheet href="style.css" type="text/css">
+<link rel="stylesheet" href="css/font-awesome.css">
+</head>
+ <body class="main">
+	<div id="topbar"></div>
+	<div id="infobar"></div>
+	<div class="console">
+	<div id="consoletop">
+	<div id="terminal">	
+	<div id="box" class="fa-stack fa-lg">
+  <i class="fa fa-square fa-stack-2x"></i>
+  <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+   	</div>
+	<span id="consoleheader">
+	 Zork I: The Great Underground Empire
+	</span>
 
-<BODY BGCOLOR="#000000" TEXT="#CCCCCC" LINK="#FFFFFF" ALINK="#FFFFFF" VLINK="#CCCCCC">
-<BR><BR><BR><BR>
-<p class="zork">
-Welcome to Zork (originally Dungeon).                   This version created 11-MAR-91 (PHP mod 03-AUG-05)<br />
-<br />
+	 
+	</div>
+				
+	</div>
+	
+<div class="zork">
+<br>
+<br>
+Welcome to Zork (originally Dungeon).                   This version created 11-MAR-91<br />
+<br/>
 You are in an open field west of a big white house with a boarded<br />
 front door.<br />
-There is a small mailbox here.<br />
-<form name="prompt" action="zork.php" method="post">&gt;&nbsp;<input class="prompt" type="text" name="inputPrompt" size="64" autocomplete="off">
+There is a small mailbox here.<br/>
+<br/>
+<form name="prompt" action="zork.php" method="post">&gt;&nbsp;<input class="prompt" type="text" name="inputPrompt" size="80" autocomplete="off">
 </form>
-<BR>
-<BR>
-</p>
+</div>
+</div>
+
+
 
 <script language="javascript">
 <!--
@@ -24,5 +45,6 @@ There is a small mailbox here.<br />
   document.prompt.inputPrompt.focus();
  -->
 </script>
+
 </body>
 </html>

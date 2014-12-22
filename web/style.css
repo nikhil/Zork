@@ -1,11 +1,97 @@
-input.prompt { background-color: #000000; color: #ffffff; border: 0px; 
-               font-size: 16pt;
-               text-decoration: none;
-               font-family: courier, monospace; }
+.main{
+	margin: 0px;
+	padding: 0px;
 
-p.zork { background-color: #000000; color: #cccccc; border: 0px;    
-               font-size: 16pt;
-               text-decoration: none;
-               font-family: courier, monospace; }
+}	
+
+input.prompt { 
+               font-family: courier, monospace;
+        		background-color: #424242;
+				border-width: 0px;
+				color: #fff;
+				font-size: large;
+
+		   }
+
+.zork {  
+font-family: courier, monospace;
+padding-left: 30px;
+padding-bottom: 30px;
+background-color: #424242;
+color:#fff;
+height: 100%;
 
 
+
+}
+
+#topbar{
+
+	height: 35px;
+
+}	
+
+#infobar{
+	
+	height: 100px;
+
+}	
+
+#consoletop{
+	background-image:-webkit-linear-gradient(top, #efedee, #c1c1c1);
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	height: 30px;
+	border-bottom: 0px;
+	margin-top:20px;
+	padding-left: 20px;
+	position: relative;
+	text-align: center;
+
+
+}
+
+#consolebar{
+	border-top: 0px;
+	padding-top: 0px;
+	background-color: #424242;
+	
+}
+
+.console{
+	
+	padding-left: 20px;
+	padding-right: 20px;
+	
+
+}	
+
+
+#terminal{
+
+	color: #424242;
+	padding-top: 6px;
+
+	
+
+
+}
+
+#box{
+	float: left;
+	transform: scale(.6,.6);
+	top: -12px;
+	left: -13px;
+
+}
+
+#consoleheader{
+
+	position: relative;
+
+
+}
+
+textarea:focus, input:focus{
+    outline: 0;
+}

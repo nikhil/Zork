@@ -9,16 +9,33 @@ $start = $_POST["start"];
  $session = $_SERVER['REMOTE_ADDR'];
 
 ?>
+<html>
+<head>
+<title>Zork</title>
+<link rel=stylesheet href="style.css" type="text/css">
+<link rel="stylesheet" href="css/font-awesome.css">
+</head>
+ <body class="main">
+	<div id="topbar"></div>
+	<div id="infobar"></div>
+	<div class="console">
+	<div id="consoletop">
+	<div id="terminal">	
+	<div id="box" class="fa-stack fa-lg">
+  <i class="fa fa-square fa-stack-2x"></i>
+  <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+   	</div>
+	<span id="consoleheader">
+	 Zork I: The Great Underground Empire
+	</span>
 
-<HTML>
-<HEAD>
-<TITLE>... 404 Error: Now what??? ...</TITLE>
-<LINK REL=stylesheet HREF="style.css" TYPE="text/css">
-</HEAD>
+	 
+	</div>
+				
+	</div>
+	
+<div class="zork">
 
-<BODY BGCOLOR="#000000" TEXT="#CCCCCC" LINK="#FFFFFF" ALINK="#FFFFFF" VLINK="#CCCCCC">
-<BR><BR><BR><BR>
-<p class="zork">
 
 <?
  $invalid =0;
@@ -270,20 +287,20 @@ if($error)
 print("<form name=\"prompt\" action=\"zork.php\" method=\"post\">");
 
 
-print("&gt;&nbsp;<input class=\"prompt\" type=\"text\" name=\"inputPrompt\" size=\"64\" autocomplete=\"off\">
+print("&gt;&nbsp;<input class=\"prompt\" type=\"text\" name=\"inputPrompt\" size=\"80\" autocomplete=\"off\">
 </form>
 ");
 }
 else
 {
-	$in = "Welcome to Zork (originally Dungeon). This version created 11-MAR-91 (PHP mod 25-OCT-2001)\n";
+	$in = "Welcome to Zork (originally Dungeon). This version created 11-MAR-91\n";
 
 	 print("<br>\n$in<br>\n<br>\n");
 
 print("<form name=\"prompt\" action=\"zork.php\" method=\"post\">");
 
 
-print("&gt;&nbsp;<input class=\"prompt\" type=\"text\" name=\"inputPrompt\" size=\"64\" autocomplete=\"off\">
+print("&gt;&nbsp;<input class=\"prompt\" type=\"text\" name=\"inputPrompt\" size=\"80\" autocomplete=\"off\">
 </form>
 ");
 
@@ -292,10 +309,9 @@ print("&gt;&nbsp;<input class=\"prompt\" type=\"text\" name=\"inputPrompt\" size
 }	
  
 ?>
+</div>
+</div>
 
-<BR>
-<BR>
-</p>
 
 <script language="javascript">
 <!--

@@ -15,9 +15,9 @@ LIBDIR = /usr/games/lib
 # more option 1: use the termcap routines.  On some systems the LIBS
 # variable may need to be set to -lcurses.  On some it may need to
 # be /usr/lib/termcap.o.  These options are commented out below.
-LIBS = -ltermcap
+#LIBS = -fPIC /usr/lib/libtermcap.so
 TERMFLAG =
-# LIBS = -lcurses
+LIBS = -lncurses
 # LIBS = /usr/lib/termcap.o
 
 # more option 2: use the terminfo routines.  On some systems the LIBS
@@ -41,6 +41,8 @@ TERMFLAG =
 # use except for debugging.
 GDTFLAG = -DALLOW_GDT
 
+
+CC = gcc
 # Compilation flags
 CFLAGS = -O2 -static
 # On SCO Unix Development System 3.2.2a, the const type qualifier does
