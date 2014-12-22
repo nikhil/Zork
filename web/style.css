@@ -118,7 +118,7 @@ textarea:focus, input:focus{
     font-size: 20;
 }
 .commandtable {
-	width: 40%;
+	width: 100%;
 	position: relative;
 	left: 26;
 	top: 20px;
