@@ -15,10 +15,52 @@ $start = $_POST["start"];
 <title>Zork</title>
 <link rel=stylesheet href="style.css" type="text/css">
 <link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="font-mfizz.css">
+<link href='http://fonts.googleapis.com/css?family=Metamorphous' rel='stylesheet' type='text/css'>
 </head>
  <body class="main">
-	<div id="topbar"></div>
-	<div id="infobar"></div>
+	<div id="infobar">
+		<span class="title">Zork  </span>
+		<span class="title-icon">
+		Created with: 	
+		<i class="icon-c" style="color:red"></i>   +
+		<i class="icon-shell" style="color:blue"></i> +
+		<i class="icon-php-alt" style="color:purple"></i>  +
+		<i class="icon-heroku" style="color:green"></i>
+		</span>
+	</br>
+	<span class ="commands">Useful Commands:</span>
+	<table class="commandtable">
+  	<tr>
+    	<td><i class="fa fa-arrow-circle-up fa-fw"></i> north</td>
+		<td><i class="fa fa-hand-o-up fa-fw"></i> up</td>
+		<td><i class="fa fa-power-off fa-fw"></i> quit</td>
+		<td><i class="fa fa-comment fa-fw"></i> hello</td>
+		<td><i class="fa fa-folder-open fa-fw"></i> open [container]</td>
+    
+	
+  	</tr>
+  	<tr>
+		<td><i class="fa fa-arrow-circle-down fa-fw"></i> south</td>		<td><i class="fa fa-hand-o-down fa-fw"></i> down</td>
+		<td><i class="fa fa-tree fa-fw"></i> climb</td>
+		<td><i class="fa fa-briefcase fa-fw"></i> inventory </td>
+
+    </tr>
+     <tr>
+  		<td><i class="fa fa-arrow-circle-right fa-fw"></i> east</td>
+		<td><i class="fa fa-eye fa-fw"></i> look</td> 
+    	<td><i class="fa fa-sign-in fa-fw"></i> in</td>		
+		<td><i class="fa fa-shopping-cart fa-fw"></i> take [item]</td>	
+    </tr>
+	<tr>
+	<td><i class="fa fa-arrow-circle-left fa-fw"></i> west</td>
+	<td><i class="fa fa-repeat fa-fw"></i> restart</td>
+	<td><i class="fa fa-sign-out fa-fw"></i> out</td>
+	<td><i class="fa fa-paper-plane fa-fw"></i> throw [item] at [location]</td>
+	</tr>	
+</table>
+
+	</div>
 	<div class="console">
 	<div id="consoletop">
 	<div id="terminal">	

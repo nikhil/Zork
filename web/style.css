@@ -29,15 +29,9 @@ overflow-y: scroll;
 
 }
 
-#topbar{
-
-	height: 35px;
-
-}	
-
 #infobar{
 	
-	height: 100px;
+	height: 200px;
 
 }	
 
@@ -99,3 +93,34 @@ overflow-y: scroll;
 textarea:focus, input:focus{
     outline: 0;
 }
+
+.title{
+
+	font-family: 'Metamorphous', cursive;
+	font-size: 50;
+	position: relative;
+	top:10px;
+	left: 40px;
+
+}
+.title-icon{
+	position: relative;
+	left: 40px;
+	font-size: 20;
+	top: 14;
+
+
+}
+.commands{
+    position:  relative;
+    left: 30px;
+    top: 10px;
+    font-size: 20;
+}
+.commandtable {
+	width: 40%;
+	position: relative;
+	left: 26;
+	top: 20px;
+
+}	
