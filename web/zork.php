@@ -237,6 +237,7 @@ $outputText = preg_replace("/You are in an open field west of a big white house 
 front door.
 There is a small mailbox here./", "", $outputText,1);
 $outputText = preg_replace("/Welcome to Zork./", "", $outputText,1);
+$outputText = preg_replace("/This version created 11-MAR-91./", "", $outputText,1);
   
 }
 
